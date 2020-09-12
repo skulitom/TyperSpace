@@ -1,0 +1,36 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "electronWebpack": {
+    "commonSourceDirectory": "./",
+    "staticSourceDirectory": "./",
+    "main": {
+      "sourceDirectory": "./"
+    },
+    "renderer": {
+      "sourceDirectory": "./"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron-webpack dev",
+    "dist": "electron-webpack build",
+    "build": "electron-webpack && electron-builder"
+  },
+  "keywords": [],
+  "author": "ArtemRuslan",
+  "dependencies": {
+    "socket.io": "^2.2.0",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "electron-webpack": "^2.8.2",
+    "webpack": "^4.43.0"
+  },
+  "license": "ISC"
+}
